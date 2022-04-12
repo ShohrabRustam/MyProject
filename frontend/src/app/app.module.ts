@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LogoutComponent } from './components/logout/logout.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
 
   ],
   providers: [],
