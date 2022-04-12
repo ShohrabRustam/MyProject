@@ -8,7 +8,6 @@ import { ResponseResetComponent } from './components/password/response-reset/res
 import { LogoutComponent } from './components/logout/logout.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SignupComponent } from './components/signup/signup.component';
-import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     RequestResetComponent,
     ResponseResetComponent,
     LogoutComponent,
-    SignupComponent,
-    ProfileComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
