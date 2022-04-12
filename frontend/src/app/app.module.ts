@@ -3,12 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
+import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
+import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RequestResetComponent,
+    ResponseResetComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
