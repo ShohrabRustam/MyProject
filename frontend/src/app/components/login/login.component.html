@@ -15,7 +15,8 @@
             <input type="password" class="form-control" id="inputPassword3" [(ngModel)]="form.password" required>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <!-- disable property  -->
+        <button type="submit" class="btn btn-primary" [disabled]="loginForm.valid">Log in</button>
       </form>
     </div>
   </div>
