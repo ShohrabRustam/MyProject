@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
     'password':null
   };
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
   }
