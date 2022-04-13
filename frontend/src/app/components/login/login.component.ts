@@ -19,10 +19,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  url:string="http://localhost:8000/api/auth/login";
+
   onSubmit(){
-    return this.http.post('url',this.form).subscribe(
-      data=>console.log(data),
-      error=>console.log(error)
+    return this.http.post(this.url,this.form).subscribe(
+      data=>{console.log(data);},
     );
   }
 
