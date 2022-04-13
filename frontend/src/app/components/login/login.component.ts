@@ -22,9 +22,15 @@ export class LoginComponent implements OnInit {
   url:string="http://localhost:8000/api/auth/login";
 
   onSubmit(){
-    return this.http.post(this.url,this.form).subscribe(
-      data=>{console.log(data);},
-    );
+    return this.http.post('this.url',this.form).subscribe({
+      next: (response:any) => {
+        console.log(response);
+      },
+      error: () => {
+        console.log("Error");
+        alert("Error Occur!!");
+      }
+    });
   }
 
 }
