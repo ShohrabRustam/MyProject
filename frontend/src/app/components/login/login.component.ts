@@ -19,6 +19,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(){}
+  onSubmit(){
+    return this.http.post('url',this.form).subscribe(
+      data=>console.log(data),
+      error=>console.log(error)
+    );
+  }
 
 }
